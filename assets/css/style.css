@@ -1,7 +1,27 @@
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: #161616;
     font-family: "Poppins", sans-serif;
     line-height: 1.4;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.circulo {
+    width: 1900px;
+    height: 1900px;
+    background: #e51e2a;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -930%;
+    left: 45%;
+
+    z-index: -1;
+}
+
+header, section {
+    position: relative;
+    z-index: 1;
 }
 
 header {
@@ -45,8 +65,42 @@ nav ul {
 }
 
 nav a{
-    text-decoration: none;
+    text-decoration: none;      
     padding: 16px;
     font-size: 16px;
     color: #FFFFFF;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+}
+
+.conteiner-banner {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1470px;
+    height: 410px;
+}
+
+.text {
+    max-width: 500px;
+    color: white;
+    Margin: 80px 16px 0px 0px;
+}
+
+.conteiner-coca {
+    position: relative;
+    height: 310px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner-coca img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

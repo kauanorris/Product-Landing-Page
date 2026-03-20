@@ -1,44 +1,54 @@
 body {
-    background-color: #161616;
     font-family: "Poppins", sans-serif;
     line-height: 1.4;
     position: relative;
     overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+.case {
+    background-color: #161616;
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden; 
 }
 
 .circulo {
-    width: 1900px;
-    height: 1900px;
-    background: #e51e2a;
-    border-radius: 50%;
-
     position: absolute;
-    top: -930%;
-    left: 45%;
-
-    z-index: -1;
+    top: 0;
+    right: 0; 
+    width: 100%;
+    height: 100%;
+    background: #e51e2a;
+    clip-path: circle(50% at 90% 30%); 
+    z-index: 0;
+    pointer-events: none; 
 }
 
-header, section {
+header, .banner {
     position: relative;
-    z-index: 1;
+    z-index: 10; 
 }
 
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    height: 28px;
-    padding: 40px 100px;
+    padding: 40px 8%; 
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .conteiner {
     display: flex;
-    align-items: center;
+    width: 100%;
     justify-content: space-between;
-    width: 1850px;
+    align-items: center;
 }
-
 .logo {
     max-width: 150%;
     position: relative;
@@ -71,36 +81,41 @@ nav a{
     color: #FFFFFF;
 }
 
-.banner {
-    display: flex;
-    align-items: center;
-}
-
-.conteiner-banner {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1470px;
-    height: 410px;
-}
-
 .text {
     max-width: 500px;
     color: white;
     Margin: 80px 16px 0px 0px;
+    padding: 0px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8%;
+    height: calc(100vh - 110px);
+}
+
+.conteiner-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
 }
 
 .conteiner-coca {
-    position: relative;
-    height: 310px;
-    overflow: hidden;
     display: flex;
+    align-items: center;
     justify-content: center;
+    width: 500px;
 }
-
 .conteiner-coca img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-height: 310px; 
+    width: auto;
 }

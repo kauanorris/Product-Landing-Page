@@ -9,7 +9,7 @@ body {
 
 .case {
     background-color: #161616;
-    width: 100%;
+    width: 103%;
     min-height: 100vh; 
     display: flex;
     flex-direction: column;
@@ -100,11 +100,13 @@ nav a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
+    margin-top: -100px;
 }
 
 .text h1 {
-    font-size: 4rem;
+    font-size: 40px;
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -115,7 +117,79 @@ nav a{
     justify-content: center;
     width: 500px;
 }
+
 .conteiner-coca img {
     max-height: 310px; 
     width: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 24px;
+    background-color: #e51e2a;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.conteiner-more {
+    display: flex;
+    flex-direction: column; /* Coloca o título acima da galeria */
+    justify-content: flex-start;
+    padding: 40px 8%;
+    font-family: sans-serif;
+}
+
+/* Alinha a barra vermelha com o texto "More to enjoy" */
+.section-header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.widget_bar {
+    height: 25px; 
+    width: 5px;
+    background-color: #e51e2a;
+}
+
+.more-enjoy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.conteiner-more h3 {
+    font-size: 22px;
+    margin: 0;
+    padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+    .case {
+        width: 100%;
+    }
+    .banner {
+        height: auto;
+        padding: 40px 8%;
+    }
+    .conteiner-banner {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -50px;
+    }
+    .text {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+    .text h1 {
+        font-size: 32px;
+    }
+    .conteiner-coca {
+        width: 100%;
+        max-width: 300px;
+    }
 }

@@ -136,16 +136,24 @@ nav a{
 
 .conteiner-more {
     display: flex;
-    flex-direction: column; /* Coloca o título acima da galeria */
-    justify-content: flex-start;
+    flex-direction: column; 
+    align-items: center;
     padding: 40px 8%;
     font-family: sans-serif;
 }
 
-/* Alinha a barra vermelha com o texto "More to enjoy" */
+
 .section-header {
     display: flex;
-    margin-bottom: 20px;
+    align-items: center;
+    margin: 32px 0px 16px;
+    
+}
+
+.section-header,
+.more-enjoy {
+    width: 100%;
+    max-width: 1100px; 
 }
 
 .widget_bar {
@@ -155,17 +163,56 @@ nav a{
 }
 
 .more-enjoy {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    gap: 30px;
+    width: 100%;
+    max-width: 1100px;
 }
 
+.item img {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+}
 .conteiner-more h3 {
     font-size: 22px;
-    margin: 0;
-    padding-left: 15px;
+    padding: 0px 0px 0px 16px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.item a {
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 0px 16px;
+}
+
+.more-drinks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 colunas iguais */
+    gap: 30px;
+    width: 100%;
+    max-width: 1004px;
+}
+
+.more-drinks img {
+    width: 100%;
+    height: 261px;
+    object-fit: contain; /* 👈 muda de cover pra contain */
+}
+
+footer {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    
 }
 
 @media (max-width: 768px) {

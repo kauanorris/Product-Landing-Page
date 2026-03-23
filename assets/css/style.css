@@ -162,7 +162,7 @@ nav a{
     background-color: #e51e2a;
 }
 
-.more-enjoy, .more-drinks {
+.more-enjoy {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 30px;

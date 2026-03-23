@@ -162,9 +162,9 @@ nav a{
     background-color: #e51e2a;
 }
 
-.more-enjoy {
+.more-enjoy, .more-drinks {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 30px;
     width: 100%;
     max-width: 1100px;
@@ -196,7 +196,7 @@ nav a{
 
 .more-drinks {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 3 colunas iguais */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 30px;
     width: 100%;
     max-width: 1004px;
@@ -205,15 +205,16 @@ nav a{
 .more-drinks img {
     width: 100%;
     height: 261px;
-    object-fit: contain; /* 👈 muda de cover pra contain */
+    object-fit: contain; 
 }
 
 footer {
     background-color: #333333;
     color: #fff;
     text-align: center;
-    
 }
+
+
 
 @media (max-width: 768px) {
     .case {

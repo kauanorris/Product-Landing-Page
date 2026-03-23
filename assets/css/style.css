@@ -9,7 +9,7 @@ body {
 
 .case {
     background-color: #161616;
-    width: 103%;
+    width: 100%;
     min-height: 100vh; 
     display: flex;
     flex-direction: column;
@@ -162,7 +162,7 @@ nav a{
     background-color: #e51e2a;
 }
 
-.more-enjoy, .more-drinks {
+.more-enjoy {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 30px;
@@ -211,9 +211,15 @@ nav a{
 footer {
     background-color: #333333;
     color: #fff;
-    text-align: center;
+    width: 100%;
 }
 
+.conteiner-footer {
+    background-color: red;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+}
 
 
 @media (max-width: 768px) {

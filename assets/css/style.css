@@ -215,12 +215,45 @@ footer {
 }
 
 .conteiner-footer {
-    background-color: red;
     max-width: 1100px;
     margin: 0 auto;
     padding: 2rem 3rem;
+    display: flex;
+    justify-content: flex-end;
 }
 
+.footer-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1004px;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    width: 150px;
+    padding: 0px 0px 16px;
+}
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.footer-menu ul {
+    display: flex;
+    flex-wrap: wrap; /* permite quebrar linha */
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu ul a{
+    padding: 0px 16px;
+}
 
 @media (max-width: 768px) {
     .case {

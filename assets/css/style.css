@@ -81,6 +81,19 @@ nav a{
     color: #FFFFFF;
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.menu-toggle span {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+}
+
 .text {
     max-width: 500px;
     color: white;
@@ -287,24 +300,121 @@ footer {
     .case {
         width: 100%;
     }
+
+    .conteiner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; 
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .circulo {
+        clip-path: circle(60% at 90% 0%);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-left: auto; 
+    }
+
+    .menu.active {
+        display: block;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #000;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
     .banner {
         height: auto;
         padding: 40px 8%;
     }
+
     .conteiner-banner {
+        display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: -50px;
     }
+
     .text {
         max-width: 100%;
         margin: 20px 0;
     }
+
     .text h1 {
         font-size: 32px;
     }
+
     .conteiner-coca {
         width: 100%;
         max-width: 300px;
+    }
+
+    .more-enjoy {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .item {
+        width: 100%;
+        max-width: 470px;
+    }
+
+    .item img {
+        width: 100%;
+        height: 228px;
+        object-fit: cover;
+    }
+
+    .more-drinks {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .more-drinks img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain; 
+    }
+
+     .footer-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column; 
+        align-items: center;
+        gap: 16px;
+    }
+
+    .lista-redes {
+        order: -1;
+    }
+
+    .terms {
+        text-align: center;
     }
 }
